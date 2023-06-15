@@ -10,12 +10,8 @@
  */
 int main(void)
 {
-	printf("         ,/|\n");
-	printf("       ,// |\n");
-	printf("     ,//   |\n");
-	printf("   ,//_____\\____\n");
-	printf(" ==_____(__6_\\______\n");
-	printf("           \"  \"\n");
+	printf("with proper grammar, but the outcome is a piece of art,");
+	
 
 	return (0);
 }
