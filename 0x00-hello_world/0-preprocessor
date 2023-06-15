@@ -1,0 +1,4 @@
+#!/bin/bash
+input_file="$CFILE"
+output_file="c"
+cpp "$input_file" > "$output_file"
