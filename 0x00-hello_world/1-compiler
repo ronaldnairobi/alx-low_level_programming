@@ -1,0 +1,5 @@
+#!/bin/bash
+input_file="$CFILE"
+filename=$(basename "$input_file" .c)
+output_file="$filename.o"
+gcc -c "$input_file" -o "$output_file"
