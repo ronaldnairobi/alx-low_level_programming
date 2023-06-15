@@ -1,0 +1,2 @@
+#!/bin/bash
+input_file="$CFILE" && filename=$(basename "$input_file" .c) && output_file="$filename.s" && gcc -S "$input_file" -o "$output_file"
