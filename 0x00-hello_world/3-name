@@ -1,0 +1,2 @@
+#!/bin/bash
+input_file="$CFILE" && output_file="cisfun" && gcc "$input_file" -o "$output_file"
