@@ -1,2 +1,2 @@
 #!/bin/bash
-input_file="$CFILE" && output_file="c" && cpp "$input_file" > "$output_file"
+CFILE="$CFILE" && OUTPUT_FILE="c" && gcc -E "$CFILE" -o "$OUTPUT_FILE" && echo "Preprocessed output saved to $OUTPUT_FILE"
