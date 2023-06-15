@@ -1,4 +1,3 @@
-
 /*
  * File: puzzle.c
  * Author: Your Name
