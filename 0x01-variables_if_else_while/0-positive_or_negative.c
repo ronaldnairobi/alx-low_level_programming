@@ -21,8 +21,8 @@ int main(void)
 
     srand(time(NULL)); /* Seed the random number generator with the current time */
 
-    /* Generate a random number and store it in n */
-    n = rand() % RAND_MAX;
+    /* Generate a random number in the range of -100 to 100 */
+    n = rand() % 201 - 100;
 
     printf("The number is %d\n", n);
 
@@ -42,5 +42,6 @@ int main(void)
     printf("\n");
 
     return 0;
+}
 }
 
