@@ -1,24 +1,45 @@
+/**
+ * main - Entry point of the program
+ *
+ * Description: This program assigns a random number to the variable n and
+ *              prints whether the number is positive, negative, or zero.
+ *
+ * Return: 0 (Success)
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
-int main() {
-    srand(time(NULL));  // Seed the random number generator with the current time
+/**
+ * main - Entry point of the program
+ *
+ * Return: 0 (Success)
+ */
+int main(void)
+{
+	int n;
 
-    int n = rand();  // Generate a random number and assign it to variable n
+	srand(time(NULL)); /* Seed the random number generator with the current time */
 
-    printf("The number is %d\n", n);
+	n = rand(); /* Generate a random number and assign it to variable n */
 
-    if (n > 0) {
-        printf("is positive\n");
-    } else if (n < 0) {
-        printf("is negative\n");
-    } else {
-        printf("is zero\n");
-    }
+	printf("The number is %d\n", n);
 
-    printf("\n");
+	if (n > 0)
+	{
+		printf("is positive\n");
+	}
+	else if (n < 0)
+	{
+		printf("is negative\n");
+	}
+	else
+	{
+		printf("is zero\n");
+	}
 
-    return 0;
+	printf("\n");
+
+	return (0);
 }
 
