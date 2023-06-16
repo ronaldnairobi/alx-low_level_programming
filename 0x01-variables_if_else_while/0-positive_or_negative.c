@@ -5,7 +5,7 @@
 /**
  * main - Entry point of the program
  *
- * Description: Prints whether a randomly generated number stored in n is positive or negative
+ * Description: Prints whether random number n is positive or negative
  *
  * Return: Always 0 (Success)
  */
