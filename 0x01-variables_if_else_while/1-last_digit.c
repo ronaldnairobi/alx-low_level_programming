@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 /**
  * main - Entry point of the program
  *
@@ -22,7 +23,7 @@ int main(void)
 		printf("Last digit of %d is %d and is 0\n", n, lastDigit);
 	else
 		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastDigit);
-    {
+  {
 	return (0);
-    }
+  }
 }
