@@ -3,34 +3,28 @@
 #include <time.h>
 
 /**
- * determineSign - Determines if a number is positive, negative, or zero
- * @number: The number to check
- *
- * Return: A string indicating the sign of the number
- */
-const char *determineSign(int number)
-{
-	if (number > 0)
-		return "is positive";
-	else if (number == 0)
-		return "is zero";
-	else
-		return "is negative";
-}
-
-/**
  * main - Entry point of the program
  *
- * Return: 0 on success
+ * Description: Prints whether a randomly generated number stored in n is positive or negative
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	srand(time(0)); /* Seed the random number generator with current time */
+	int n;
 
-	int n = rand() - RAND_MAX / 2;
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
 
-	printf("The number %d %s\n", n, determineSign(n));
+	printf("The number %d is ", n);
 
-	return 0;
+	if (n > 0)
+		printf("positive\n");
+	else if (n == 0)
+		printf("zero\n");
+	else
+		printf("negative\n");
+
+	return (0);
 }
 
