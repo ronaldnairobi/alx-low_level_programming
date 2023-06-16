@@ -24,19 +24,19 @@ int main(void)
     /* Generate a random number in the range of -100 to 100 */
     n = rand() - RAND_MAX / 2;
 
-    printf("The number is %d\n", n);
+    printf("%d\n", n);
 
     if (n > 0)
     {
-        printf("%d is positive\n");
+        printf("is positive\n");
     }
     else if (n < 0)
     {
-        printf("%d is negative\n");
+        printf("is negative\n");
     }
     else
     {
-        printf("%d is zero\n");
+        printf("is zero\n");
     }
 
     printf("\n");
