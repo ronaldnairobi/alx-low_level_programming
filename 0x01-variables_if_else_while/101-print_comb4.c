@@ -3,30 +3,35 @@
 /**
  * main - Entry point of the program
  *
+ * Description: Prints all possible combinations of three digits
+ * Numbers must be separated by ", " followed by a space
+ * The three digits must be different
+ * Numbers should be printed in ascending order, with three digits
+ * Only the smallest combination of three digits is printed
+ * Only the putchar function is used, with a maximum of six times
+ * No variables of type char are used
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	putchar('0');
-	putchar('0');
-	putchar('0');
-	putchar(',');
-	putchar(' ');
-	putchar('0');
-	putchar('0');
-	putchar('1');
+	int i, j, k;
 
-	for (int first = 0; first < 8; first++)
+	for (i = 0; i <= 7; i++)
 	{
-		for (int second = first + 1; second < 9; second++)
+		for (j = i + 1; j <= 8; j++)
 		{
-			for (int third = second + 1; third < 10; third++)
+			for (k = j + 1; k <= 9; k++)
 			{
-				putchar(',');
-				putchar(' ');
-				putchar('0' + first);
-				putchar('0' + second);
-				putchar('0' + third);
+				putchar(i + '0');
+				putchar(j + '0');
+				putchar(k + '0');
+
+				if (i != 7 || j != 8 || k != 9)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
@@ -35,3 +40,4 @@ int main(void)
 
 	return (0);
 }
+
