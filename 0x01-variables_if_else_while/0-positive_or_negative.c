@@ -29,7 +29,7 @@ int main(void)
 
 	int n = rand() - RAND_MAX / 2;
 
-	printf("The number %d %s\n", n, determineSign(n));
+	printf("The number %d %s\n ", n, determineSign(n));
 
 	return 0;
 }
