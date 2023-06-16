@@ -19,10 +19,10 @@ int main(void)
 {
     int n;
 
-    srand(time(NULL)); /* Seed the random number generator with the current time */
+    srand(time(0)); /* Seed the random number generator with the current time */
 
     /* Generate a random number in the range of -100 to 100 */
-    n = rand() % 201 - 100;
+    n = rand() - RAND_MAX / 2;
 
     printf("The number is %d\n", n);
 
