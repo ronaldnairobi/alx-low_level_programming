@@ -1,45 +1,38 @@
-/**
- * main - Entry point of the program
- *
- * Description: This program assigns a random number to the variable n and
- *              prints whether the number is positive, negative, or zero.
- *
- * Return: 0 (Success)
- */
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
 
 /**
  * main - Entry point of the program
  *
- * Return: 0 (Success)
+ * This program assigns a random number to the variable n each time it is executed.
+ * It then prints whether the number stored in the variable n is positive, negative, or zero.
+ *
+ * Return: 0 on success
  */
 int main(void)
 {
-	int n;
+    srand(time(0));  // Seed the random number generator
 
-	srand(time(NULL)); /* Seed the random number generator with the current time */
+    int n = rand() % RAND_MAX;  // Generate a random number and store it in n
 
-	n = rand(); /* Generate a random number and assign it to variable n */
+    std::cout << "The number " << n << " is ";  // Output the initial message
 
-	printf("The number is %d\n", n);
+    if (n > 0)
+    {
+        std::cout << "positive";  // Output "positive" if n is greater than 0
+    }
+    else if (n < 0)
+    {
+        std::cout << "negative";  // Output "negative" if n is less than 0
+    }
+    else
+    {
+        std::cout << "zero";  // Output "zero" if n is equal to 0
+    }
 
-	if (n > 0)
-	{
-		printf("is positive\n");
-	}
-	else if (n < 0)
-	{
-		printf("is negative\n");
-	}
-	else
-	{
-		printf("is zero\n");
-	}
+    std::cout << std::endl;  // Insert a new line
 
-	printf("\n");
-
-	return (0);
+    return 0;  // Return 0 to indicate successful program execution
 }
 
