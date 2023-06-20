@@ -14,7 +14,7 @@ int main(void)
 /**
  * print_alphabet_x10 - Prints the lowercase alphabet ten times followed by a new line
  */
-void print_alphabet_x10(void)
+void print_alphabet(void)
 {
     int i;
     char letter;
