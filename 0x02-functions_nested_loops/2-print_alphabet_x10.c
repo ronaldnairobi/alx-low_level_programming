@@ -1,4 +1,4 @@
-#include "main.h"
+#include "main2.h"
 #include <stdio.h>
 
 /**
@@ -6,14 +6,13 @@
  */
 void print_alphabet_x10(void)
 {
-    int i;
-    char letter;
+    int i, j;
 
     for (i = 0; i < 10; i++)
     {
-        for (letter = 'a'; letter <= 'z'; letter++)
+        for (j = 0; j < 26; j++)
         {
-            putchar(letter);
+            putchar('a' + j);
         }
         putchar('\n');
     }
