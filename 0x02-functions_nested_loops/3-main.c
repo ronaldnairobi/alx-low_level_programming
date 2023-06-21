@@ -1,14 +1,21 @@
 #include "main.h"
 
+/**
+ * main - Entry point
+ *
+ * Return: Always 0
+ */
 int main(void)
 {
-    char ch = 'a';
+    int r;
 
-    if (_islower(ch))
-        printf("%c is a lowercase character\n", ch);
-    else
-        printf("%c is not a lowercase character\n", ch);
-
+    r = _islower('H');
+    putchar(r + '0');
+    r = _islower('o');
+    putchar(r + '0');
+    r = _islower(108);
+    putchar(r + '0');
+    putchar('\n');
     return 0;
 }
 
