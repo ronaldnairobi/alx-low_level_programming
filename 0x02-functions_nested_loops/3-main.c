@@ -16,6 +16,8 @@ void test_islower(void)
     putchar('\n');
 }
 
+#include <stdio.h>
+
 /**
  * main - Entry point
  *
