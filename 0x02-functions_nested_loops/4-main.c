@@ -11,14 +11,14 @@ int main(void)
     int r;
 
     r = _isalpha('H');
-    printf("%d", r);
+    putchar(r + '0');
     r = _isalpha('o');
-    printf("%d", r);
+    putchar(r + '0');
     r = _isalpha(108);
-    printf("%d", r);
+    putchar(r + '0');
     r = _isalpha(';');
-    printf("%d", r);
-    printf("\n");
+    putchar(r + '0');
+    putchar('\n');
 
     return 0;
 }
