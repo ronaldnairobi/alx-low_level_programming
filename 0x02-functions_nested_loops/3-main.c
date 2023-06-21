@@ -2,11 +2,9 @@
 #include "main.h"
 
 /**
- * main - Entry point
- *
- * Return: Always 0
+ * test_islower - Test the _islower function.
  */
-int main(void)
+void test_islower(void)
 {
     int r;
 
@@ -17,6 +15,16 @@ int main(void)
     r = _islower(108);
     putchar(r + '0');
     putchar('\n');
+}
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0
+ */
+int main(void)
+{
+    test_islower();
     return 0;
 }
 
