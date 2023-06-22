@@ -1,33 +1,22 @@
 #include "main.h"
-#include <unistd.h>
-
-/**
- * _putchar - writes a character to the standard output
- * @c: the character to be written
- *
- * Return: on success, the character written; on error, -1
- */
-int _putchar(char c)
-{
-    return write(1, &c, 1);
-}
 
 /**
  * print_number - Prints an integer
  * @n: The integer to be printed
+ * Return: always 0
  */
 void print_number(int n)
 {
-    if (n < 0)
-    {
-        _putchar('-');
-        n = -n;
-    }
+unsigned int i = n;
 
-    if (n / 10)
-    {
-        print_number(n / 10);
-    }
-
-    _putchar((n % 10) + '0');
+if (n < 0)
+{
+putchar(45);
+i = -i;
+}
+if (i / 10)
+{
+print_number(i / 10);
+}
+putchar((i % 10) + '0');
 }
