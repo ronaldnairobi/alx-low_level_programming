@@ -9,36 +9,36 @@
  */
 unsigned long largest_prime_factor(unsigned long n)
 {
-    unsigned long i;
+unsigned long i;
 
-    while (n % 2 == 0)
-    {
-        n /= 2;
-    }
+while (n % 2 == 0)
+{
+n /= 2;
+}
 
-    for (i = 3; i <= sqrt(n); i += 2)
-    {
-        while (n % i == 0)
-        {
-            n /= i;
-        }
-    }
+for (i = 3; i <= sqrt(n); i += 2)
+{
+while (n % i == 0)
+{
+n /= i;
+}
+}
 
-    if (n > 2)
-    {
-        return n;
-    }
+if (n > 2)
+{
+return n;
+}
 
-    return i - 2;
+return i - 2;
 }
 
 int main(void)
 {
-    unsigned long number = 612852475143;
-    unsigned long largest_factor = largest_prime_factor(number);
+unsigned long number = 612852475143;
+unsigned long largest_factor = largest_prime_factor(number);
 
-    printf("%lu\n", largest_factor);
+printf("%lu\n", largest_factor);
 
-    return 0;
+return 0;
 }
 
