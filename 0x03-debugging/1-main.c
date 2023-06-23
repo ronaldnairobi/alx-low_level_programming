@@ -13,8 +13,9 @@ printf("Infinite loop incoming :(\n");
 
 i = 0;
 
-/**
-*while (i < 10)
+/*
+*Commenting out the code causing the infinite loop
+* while (i < 10)
 *{
 *putchar(i);
 *}
