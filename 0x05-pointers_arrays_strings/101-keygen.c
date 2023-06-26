@@ -13,10 +13,8 @@ void generate_password()
     char password[PASSWORD_LENGTH + 1];
     int i;
 
-    // Set the seed for random number generation
     srand(time(NULL));
 
-    // Generate random characters for the password
     for (i = 0; i < PASSWORD_LENGTH; i++)
     {
         password[i] = ' ' + (rand() % 94);
@@ -39,7 +37,7 @@ int main(void)
 
     if (strcmp(generated_password, expected_password) == 0)
     {
-        printf("Password cracked! Congratulations!\n");
+        printf("Tada! Congrats\n");
     }
     else
     {
