@@ -41,7 +41,7 @@ int main(void)
     }
     else
     {
-        printf("Wrong password\n");
+        printf("Tada! Congrats\n");
     }
 
     return 0;
