@@ -10,7 +10,6 @@
 char *cap_string(char *s)
 {
 int string_count;
-
 /*scan through string */
 string_count = 0;
 while (s[string_count] != '\0')
