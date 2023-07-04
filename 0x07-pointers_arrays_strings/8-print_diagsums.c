@@ -3,7 +3,7 @@
 
 /**
  * print_diagsums - entry point
- * @a: input 
+ * @a: input
  * @size: input
  * Return: success always 0
  */
