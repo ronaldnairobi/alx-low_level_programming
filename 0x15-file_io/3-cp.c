@@ -64,8 +64,7 @@ buffer = create_buffer(argv[2]);
 from = open(argv[1], O_RDONLY);
 r = read(from, buffer, 1024);
 to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-do
-{
+do {
 if (from == -1 || r == -1)
 {
 dprintf(STDERR_FILENO,
@@ -83,8 +82,7 @@ exit(99);
 }
 r = read(from, buffer, 1024);
 to = open(argv[2], O_WRONLY | O_APPEND);
-}
-while (r > 0);
+} while (r > 0);
 free(buffer);
 close_file(from);
 close_file(to);
